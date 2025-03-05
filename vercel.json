@@ -1,0 +1,11 @@
+{
+    "rewrites": [
+      { "source": "/js/(.*)", "destination": "/src/js/$1" },
+      { "source": "/images/(.*)", "destination": "/src/images/$1" },
+      { "source": "/style.css", "destination": "/src/style.css" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/index.html" }
+    ]
+  }
+  
