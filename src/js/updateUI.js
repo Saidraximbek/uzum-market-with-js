@@ -1,6 +1,5 @@
 const template = document.querySelector("template");
 const cardList = document.getElementById("card-list");
-const loaderWrapper = document.querySelector(".loader__wrapper");
 
 const showCards = ({ products }) => {
   products.forEach((product) => {
@@ -15,9 +14,6 @@ const showCards = ({ products }) => {
       reviews,
     } = product;
 
-    
-  
-
     const clone = template.content.cloneNode(true);
 
     const a = clone.querySelector("a");
@@ -28,14 +24,14 @@ const showCards = ({ products }) => {
     const priceText = clone.querySelector(".price");
     const priceWithDiscount = clone.querySelector(".price-with-discount");
     const buyBtn = document.querySelector(".buy-btn");
-    a.href = `./product.html?id=${id}`
+    a.href = `./product.html?id=${id}`;
     img.src = thumbnail;
     img.alt = title;
-    
+
     descriptionText.textContent = description;
 
     ratingText.textContent = rating;
-    
+
     priceText.textContent = `$${price}`;
     priceWithDiscount.textContent = `$${(price - (price / 100) * discountPercentage).toFixed(2)}`;
 
@@ -47,8 +43,6 @@ const showCards = ({ products }) => {
 
 const showProduct = (product) => {
   console.log(product);
-  
-}
-
+};
 
 export { showCards, showProduct };
