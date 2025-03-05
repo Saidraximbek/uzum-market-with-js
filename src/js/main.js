@@ -36,6 +36,3 @@ fetchData("https://dummyjson.com/products")
     console.log(error);
   });
 
-  buyBtn.addEventListener("click", ()=>{
-    
-  })
