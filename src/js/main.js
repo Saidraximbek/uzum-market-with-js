@@ -4,6 +4,7 @@ import { showCards } from "./updateUI.js";
 
 const ctgSelect = document.getElementById("ctg-select");
 const cardList = document.getElementById("card-list");
+const buyBtn = document.getElementById("buy-btn");
 
 fetchData("https://dummyjson.com/products")
   .then((data) => {
@@ -34,3 +35,7 @@ fetchData("https://dummyjson.com/products")
   .catch((error) => {
     console.log(error);
   });
+
+  buyBtn.addEventListener("click", ()=>{
+    
+  })

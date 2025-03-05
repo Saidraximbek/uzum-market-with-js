@@ -13,6 +13,7 @@
     "daisyui": "^5.0.0",
     "prettier": "3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
+    "vercel": "^41.3.1",
     "vite": "^5.0.8"
   },
   "dependencies": {
