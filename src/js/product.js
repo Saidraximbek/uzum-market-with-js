@@ -1,5 +1,5 @@
 
-import { fetchData } from "./fetchData";
+import { fetchData } from "./fetchData.js";
 import { showProduct } from "./updateUI.js";
 import "./dark-mode.js";
 
@@ -50,6 +50,7 @@ minus.addEventListener("click", () => {
     updatePrice();
   }
 });
+
 
 
 
